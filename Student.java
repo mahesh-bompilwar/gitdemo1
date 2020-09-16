@@ -4,6 +4,14 @@ public class Student{
     private String name;
     private int rollNo;
 
+    public String getName(){
+        return name;
+    }
+
+    public int getRollNo(){
+        return rollNo;
+    }
+
     public Student(String name, int rollNo){
 
         this.name=name;
@@ -12,8 +20,8 @@ public class Student{
 
     public static void main(String[] args) {
         Student student = new Student("Sachin", 123);
-        System.out.println("Student name: "+student.name);
-        System.out.println("Student Roll No : "+student.rollNo);
+        System.out.println("Student name: "+student.getName());
+        System.out.println("Student Roll No : "+student.getRollNo());
     }
 
 }   
